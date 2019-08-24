@@ -12,9 +12,11 @@ header{
 #main-logo{
     padding: 5px 10px;
     display: inline-block;
+    /* cursor: pointer; */
 }
 #main-logo img{
     width: 40px;;
+    cursor: pointer;
 }
 .navbar{
     padding-bottom: 14px;
@@ -95,11 +97,14 @@ nav{
     padding: 9px 34px;
     border-radius: 4px;
     cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 .btn-primary:focus,
 .btn-primary:active{
     outline: none !important;
+    background-color: #f6f6f5;
+    color: rgb(170, 210, 54);
 }
 
 
@@ -544,4 +549,128 @@ footer {
     letter-spacing: 0.5px;
     padding: 30px 0px;
     font-family: 'Poppins', sans-serif;
+}
+
+
+/* --------------------------------------------------- */
+/* --------------MEDIA QUERY SECTION------------------ */
+
+@media (max-width: 900px){
+    nav{
+        width: 150px;
+        margin-right: 0;
+    }
+    .navbar{
+        width: 100vw;
+    }
+    .nav-item{
+        display: none;
+    }
+    .btn-primary{
+        margin-right: 0;
+    }
+    #landing-section h1{
+        font-size: 30px;
+    }
+    #landing-section p{
+        font-size: 16px;
+        box-sizing: border-box;
+    }
+    #steps-section{
+        width: 100%;
+        flex-direction: column;
+    }
+    .step-item {
+        width: 100%;
+    }
+
+    #store-intro-section{
+        /* padding: 16px; */
+        box-sizing: border-box;
+    }
+
+    /* Store section */
+    .store-items{
+        flex-direction: column;
+        text-align: center;
+        align-content: center
+    }
+    .store-item{
+        width: 100%;
+        padding: 0;
+    }
+
+    /* Testimonial section */
+    .testimonials-items-wrapper{
+        flex-direction: column;
+    }
+    .testimonial-item{
+        width: 100%;
+        padding: 0 16px;
+        margin: 60px 0px ;
+    }
+    .testimonial-mssg{
+        padding: 10px;
+    }
+    /* Follow section */
+    #follow-section{
+        flex-direction: column;
+    }
+    .left-section{
+        width: 100%;
+    }
+    .right-section{
+        width: 100%;
+    }
+    .text-wrapper{
+        width: 100%;
+        margin: 0;
+        padding: 20px 10px;
+    }
+    #counter-wrapper{
+        flex-direction: column;
+        /* text-align: center; */
+    }
+    .counter-item{
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    #video-section{
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .grey-line{
+        margin-bottom: 0;
+    }
+
+
+    /* address section */
+    #address-wrapper{
+        flex-direction: column;
+    }
+    #address-side{
+        width: 80%;
+    }
+    #form-side{
+        width: 100%;
+    }
+
+
+
+    .main-text h1{
+        letter-spacing: 4px;
+        margin-bottom: 20px;
+    }
+    .main-text p{
+        padding: 30px 40px;
+        line-height: 1.5;
+    }
+    .heading-3{
+        font-size: 34px;
+    }
+    .navbar{
+        position: fixed;
+    }
 }
